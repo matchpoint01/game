@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function mine(uid) { return request.auth != null && request.auth.uid == uid; }
+    function sum3(s) { return s.w + s.d + s.l; }
+    function allowedKeys() { return ['name','email','tickets','xp','level','cards','stats','lastMatch']; }
+    function statKeys() { return ['w','d','l']; }
+
+    match /users/{uid} {
+      allow read: if mine(uid);
+
+      // Conta nova: tudo a zero (o jogador não se pode dar tickets, XP, cartas nem vitórias)
+      allow create: if mine(uid)
+        && request.resource.data.keys().hasOnly(allowedKeys())
+        && request.resource.data.name is string && request.resource.data.name.size() <= 20
+        && request.resource.data.tickets == 0 && request.resource.data.xp == 0
+        && request.resource.data.level == 1 && request.resource.data.cards.size() == 0
+        && request.resource.data.stats.keys().hasOnly(statKeys())
+        && sum3(request.resource.data.stats) == 0
+        && request.resource.data.lastMatch == request.time;
+
+      allow update: if mine(uid) && request.resource.data.keys().hasOnly(allowedKeys()) && (
+
+        // ABRIR PACK: gasta exatamente 1 ticket, sobe o XP (máx. 225), toca em 1 só carta
+        ( request.resource.data.diff(resource.data).affectedKeys().hasOnly(['tickets','xp','level','cards'])
+          && request.resource.data.tickets == resource.data.tickets - 1
+          && request.resource.data.tickets >= 0
+          && request.resource.data.xp > resource.data.xp
+          && request.resource.data.xp - resource.data.xp <= 225
+          && request.resource.data.level >= resource.data.level
+          && request.resource.data.level <= resource.data.level + 4
+          && request.resource.data.cards.diff(resource.data.cards).affectedKeys().size() == 1
+          && request.resource.data.cards.diff(resource.data.cards).removedKeys().size() == 0 )
+
+        ||
+
+        // RESULTADO DE UM JOGO: +1 jogo, no máximo 1 por 90 s
+        ( request.resource.data.diff(resource.data).affectedKeys().hasOnly(['stats','lastMatch'])
+          && request.resource.data.lastMatch == request.time
+          && request.time > resource.data.lastMatch + duration.value(90, 's')
+          && request.resource.data.stats.keys().hasOnly(statKeys())
+          && sum3(request.resource.data.stats) == sum3(resource.data.stats) + 1
+          && request.resource.data.stats.w >= resource.data.stats.w
+          && request.resource.data.stats.d >= resource.data.stats.d
+          && request.resource.data.stats.l >= resource.data.stats.l )
+      );
+
+      allow delete: if false;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

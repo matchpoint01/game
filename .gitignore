@@ -1,0 +1,4 @@
+# nunca subas chaves de conta de serviço / Admin SDK
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+.env

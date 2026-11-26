@@ -661,6 +661,51 @@ img.pgi{object-fit:contain}
 .fc.pkc::before{background:url(playstyles/carta_dourada.png) center/100% 100% no-repeat !important;clip-path:none !important}
 .fc.pkc::after{display:none !important}
 .fc.pkc.rN::before{filter:grayscale(1) brightness(.8) contrast(1.1)}
+
+/* ===== Draft-style packs ===== */
+#pz .dr{display:grid;grid-template-columns:260px 1fr;grid-template-rows:1fr auto;height:calc(100% - 60px);background:radial-gradient(ellipse at 60% 30%,#1c2a55 0,#0a1024 60%,#05070f 100%)}
+#pz .dr aside{grid-row:1/3;background:#070b18cc;border-right:1px solid #ffffff18;padding:16px 12px;overflow:auto}
+#pz .dr aside h4{margin:0 0 12px;font-size:16px;letter-spacing:.2em;color:#8fa0c8}
+#pz .pi{display:flex;gap:12px;align-items:center;padding:10px;border-radius:6px;margin-bottom:8px;background:#ffffff0d;border-left:4px solid transparent}
+#pz .pi.on{background:linear-gradient(90deg,#1d6dff55,#1d6dff11);border-left-color:#35c1ff}
+#pz .pi b{display:block;font-size:19px;letter-spacing:.04em}#pz .pi small{color:#9aa7c2;font-size:14px}
+#pz .pi.lk{opacity:.45}#pz .pi .mn{width:36px;height:46px;border-radius:3px;background:linear-gradient(#555,#333);flex:none}
+#pz .pzpk.mini{width:36px;height:46px;margin:0;flex:none;perspective:none;animation:none}#pz .pzpk.mini .em,#pz .pzpk.mini .lb,#pz .pzpk.mini .strip{display:none}
+#pz .dr section{padding:18px 26px 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;min-height:0;overflow:auto}
+#pz .dr section h2{font-size:38px;font-weight:800;letter-spacing:.1em;margin:0}#pz .dr .sb{color:#9aa7c2;font-size:16px;margin:0}
+#pz .feat{display:flex;gap:74px;justify-content:center;padding:22px 0 12px 40px;font-size:clamp(11px,2.2vh,17px)}
+#pz .feat .fi .fc{font-size:1em;transform:translateY(0);transition:transform .25s}#pz .feat .fi:nth-child(2n) .fc{transform:translateY(-10px)}#pz .feat .fi:hover .fc{transform:translateY(-14px) scale(1.05)}
+#pz .dr footer{display:flex;gap:18px;justify-content:center;align-items:center;padding:14px;background:#050813dd;border-top:1px solid #ffffff18}
+#pz .dr .bal{display:flex;gap:6px;align-items:center;font-size:26px;font-weight:800;margin-right:auto;padding-left:18px}#pz .dr .bal svg{width:28px;height:28px}
+#pz .dr .open{flex-direction:column;gap:0;padding:8px 44px;border-radius:6px;font-size:26px;line-height:1.1;align-items:center}
+#pz .dr .open em{display:flex;align-items:center;gap:4px;font:700 17px 'Barlow Condensed',Arial,sans-serif;font-style:normal;opacity:.9}#pz .dr .open em svg{width:16px;height:16px}
+#pz .dr .open.ten{background:linear-gradient(#ffd24a,#d98a00);color:#2a1a00;box-shadow:0 6px 24px rgba(217,138,0,.45)}
+#pz .dr .open:disabled{background:#2a3350;color:#8b95b3;box-shadow:none}
+.rv .skip{position:absolute;right:22px;bottom:20px;z-index:6;padding:8px 18px;border:1px solid #fff6;background:#0008;color:#fff;border-radius:6px;font:700 17px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.1em;cursor:pointer}
+.rv .cnt2{position:absolute;left:22px;bottom:22px;z-index:6;font:800 22px 'Barlow Condensed',Arial,sans-serif;color:#fff;opacity:.85}
+.rv .coin svg{width:100%;height:100%;padding:12%}
+#pz .sum{padding:16px 20px 30px;text-align:center}#pz .sum h2{font-size:32px;letter-spacing:.1em;margin:6px 0 18px}
+#pz .sum .grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));max-width:1100px;margin:0 auto 22px;font-size:14px}#pz .sum .cell .fc{font-size:14px}
+#pz .sum .nw{position:absolute;left:50%;bottom:-12px;transform:translateX(-50%);background:#35d06a;color:#04210f;font:800 14px 'Barlow Condensed',Arial,sans-serif;padding:2px 10px;border-radius:9px;letter-spacing:.06em}#pz .sum .nw.rp{background:#ffb02e;color:#2a1700}
+#pz .sum .cont{position:static;display:inline-block}
+/* ===== seleção de país ===== */
+#pz .cs{height:100%;display:flex;flex-direction:column;background:radial-gradient(ellipse at 50% 20%,#1a2a58 0,#080d1f 65%,#04060d 100%)}
+#pz .cst{padding:14px 26px;font:800 30px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.14em;background:linear-gradient(90deg,#0a7be0,#0a1024 70%)}
+#pz .csb{flex:1;display:flex;align-items:center;justify-content:center;padding:20px}
+#pz .cin{width:min(640px,92%);background:#050813cc;border:1px solid #ffffff22;border-radius:6px;padding:24px 28px}
+#pz .cin h3{display:flex;gap:12px;align-items:center;margin:0 0 10px;font-size:38px;letter-spacing:.06em}#pz .cin h3 .flg{height:30px}
+#pz .cin p{margin:0 0 16px;font-size:19px;line-height:1.3;color:#cfd8ee}
+#pz .cch span{display:block;font-size:16px;letter-spacing:.12em;color:#9aa7c2;margin-bottom:8px}#pz .cch i{display:block;height:7px;background:linear-gradient(90deg,#35c1ff,#0a7be0);border-radius:4px;margin-top:3px}
+#pz .ctr{display:flex;gap:10px;justify-content:center;padding:10px 16px;overflow-x:auto}
+#pz .ct{flex:none;width:128px;padding:10px 6px;text-align:center;background:linear-gradient(#1b2547,#0c1226);border:2px solid #ffffff22;border-radius:6px;position:relative}
+#pz .ct .fl .flg{width:74px;height:50px;border-radius:3px;box-shadow:0 2px 8px #0008}#pz .ct b{display:block;font-size:20px;letter-spacing:.06em;margin-top:6px}#pz .ct u{text-decoration:none;color:#ffd60a;font-size:15px;letter-spacing:.1em}
+#pz .ct.on{cursor:pointer}#pz .ct.sel{border-color:#ffd60a;box-shadow:0 0 18px #ffd60a88;transform:translateY(-6px)}
+#pz .ct.lk{opacity:.4;filter:grayscale(.7)}#pz .ct em{display:block;font-style:normal;font-size:13px;letter-spacing:.12em;color:#9aa7c2}
+#pz .cbt{display:flex;gap:12px;justify-content:center;padding:12px 16px 20px;background:#030610}
+#pz .cbt button{padding:10px 26px;border:1px solid #ffffff44;background:#ffffff12;color:#fff;border-radius:4px;font:800 21px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.1em;cursor:pointer}
+#pz .cbt .ok{background:linear-gradient(#35c1ff,#0a7be0);border:0;padding:10px 46px}#pz .cbt .ok:disabled{opacity:.5}
+@media(max-width:760px){#pz .dr{grid-template-columns:1fr}#pz .dr aside{display:none}#pz .feat{gap:16px;padding-left:20px}}
+#pz .sum .cont{padding:12px 54px;border:0;border-radius:26px;background:linear-gradient(#35c1ff,#0a7be0);color:#fff;font:800 24px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.1em;cursor:pointer;box-shadow:0 6px 24px rgba(10,123,224,.5)}
 </style></head><body>
 <canvas id="c"></canvas>
 
@@ -742,8 +787,9 @@ if(!ok){
   async login(e,p){const k=key(e),u=ld()[k];if(!u||u.hash!==await hash(u.salt,p))throw{code:"auth/invalid-credential"};cur=k;try{localStorage.setItem(S,k)}catch(_){}push()},
   async logout(){cur=null;try{localStorage.removeItem(S)}catch(_){}push()},
   give(n){mut(d=>{d.tickets=(d.tickets|0)+n})},
-  async openPack(fn){return mut(d=>{if(!(d.tickets>=1))throw new Error("no-tickets");const r=fn(d);d.tickets--;d.xp=r.xp;d.level=r.level;d.cards[r.id]=r.copies;return r})},
-  async reportMatch(fn){return mut(d=>{d.stats=fn(d.stats||zero());return d.stats})}
+  async openPack(fn){return mut(d=>{if(!(d.tickets>=1))throw new Error("no-tickets");const r=fn(d);d.tickets--;d.cards[r.id]=r.copies;return r})},
+  async setCountry(fn){return mut(d=>{if(d.country)throw new Error("has-country");const r=fn(d);d.country=r.country;d.cards=Object.assign(d.cards||{},r.cards);return r})},
+  async reportMatch(fn){return mut(d=>{const r=fn(d);d.stats=r.stats;d.xp=r.xp;d.level=r.level;d.tickets=r.tickets;return r})}
  });
 }
 else{
@@ -767,14 +813,19 @@ else{
    reportMatch(fn){const u=auth.currentUser;if(!u)return Promise.reject(new Error("no-auth"));
      const ref=F.doc(db,"users",u.uid);
      return F.runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())throw new Error("no-doc");
-       const st=fn(s.data().stats||{});tx.update(ref,{stats:st,lastMatch:F.serverTimestamp()});return st})},
+       const st=fn(s.data());tx.update(ref,{stats:st.stats,xp:st.xp,level:st.level,tickets:st.tickets,lastMatch:F.serverTimestamp()});return st})},
    logout(){return Au.signOut(auth)},
    /* Abre 1 pack numa transação: gasta 1 ticket e guarda a carta/XP.  fn(dados)->{id,xp,level,copies,...} */
    openPack(fn){const u=auth.currentUser;if(!u)return Promise.reject(new Error("no-auth"));
      const ref=F.doc(db,"users",u.uid);
      return F.runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())throw new Error("no-doc");const d=s.data();
        if(!(d.tickets>=1))throw new Error("no-tickets");
-       const r=fn(d);tx.update(ref,{tickets:d.tickets-1,xp:r.xp,level:r.level,["cards."+r.id]:r.copies});return r})}
+       const r=fn(d);tx.update(ref,{tickets:d.tickets-1,["cards."+r.id]:r.copies});return r})},
+   /* Escolha do país (1 vez): grava country e as cartas iniciais */
+   setCountry(fn){const u=auth.currentUser;if(!u)return Promise.reject(new Error("no-auth"));
+     const ref=F.doc(db,"users",u.uid);
+     return F.runTransaction(db,async tx=>{const s=await tx.get(ref);if(!s.exists())throw new Error("no-doc");const d=s.data();if(d.country)throw new Error("has-country");
+       const r=fn(d),up={country:r.country};for(const id in r.cards)up["cards."+id]=r.cards[id];tx.update(ref,up);return r})}
   });
  }catch(e){console.error(e);done({configured:true,failed:true,error:e})}
 }
@@ -802,9 +853,9 @@ if(!window.THREE){document.body.textContent="Não foi possível carregar o Three
 const T=THREE,$=id=>document.getElementById(id),cl=(v,a,b)=>Math.max(a,Math.min(b,v)),rnd=(a,b)=>a+Math.random()*(b-a),tmp=new T.Vector3();
 const L=50,W=30,GW=3.66,GH=2.44,R=.22,BS=1.3,CRIT=17,CHARGE_T=1.15,BOXD=17,BOXW=19;
 let gameState="MENU",matchTimer={duration:180,elapsed:0,period:1,ht:0,add1:null,add2:null,extra:0},score={home:0,away:0},celeb=0,concede=1,clock=0,switchCD=0,markT=0,camPunch=0,camMode=0,camZoom=1;
-const sel={team:"barcelona",diff:"medium",dur:180,form:"4-3-3",aiForm:"4-3-3",wx:"sol",tod:"dia",mode:"normal"},humanSide=1;
+const sel={team:"portugal",diff:"medium",dur:180,form:"4-3-3",aiForm:"4-3-3",wx:"sol",tod:"dia",mode:"normal"},humanSide=1;
 let sp=null,shots=[0,0];
-const other=k=>k==="barcelona"?"madrid":"barcelona";
+const OPP={k:"madrid"},other=k=>k==="portugal"?OPP.k:"portugal",rollOpp=()=>{OPP.k=Math.random()<.5?"barcelona":"madrid"};
 
 // ---------- Dificuldade ----------
 const DIFFS={
@@ -820,7 +871,7 @@ const cfgOf=p=>p.side===humanSide?ALLY:DIFFS[sel.diff];
 const POSPT={ST:"Ponta de Lança",CF:"Segundo Avançado",LW:"Extremo Esquerdo",RW:"Extremo Direito",CAM:"Médio Ofensivo",CM:"Médio Centro",CDM:"Médio Defensivo",CB:"Defesa Central",LB:"Lateral-Esquerdo",RB:"Lateral-Direito",GK:"Guarda-Redes"};
 const GRP={GK:"GK",LB:"DEF",RB:"DEF",CB:"DEF",CDM:"MID",CM:"MID",CAM:"MID",LW:"ATT",RW:"ATT",ST:"ATT",CF:"ATT"};
 const SLOT_GRP=["GK","DEF","DEF","DEF","DEF","MID","MID","MID","ATT","ATT","ATT"];
-const CLUBS={barcelona:"FC Barcelona",madrid:"Real Madrid"};
+const CLUBS={barcelona:"FC Barcelona",madrid:"Real Madrid",portugal:"Portugal"};
 const COUNTRY={ES:"Espanha",DK:"Dinamarca",FR:"França",BR:"Brasil",PL:"Polónia",PT:"Portugal",NL:"Países Baixos",GB:"Inglaterra",DE:"Alemanha",SE:"Suécia",BE:"Bélgica",UY:"Uruguai",CI:"Costa do Marfim",UA:"Ucrânia",TR:"Turquia",MA:"Marrocos"};
 const FLG={
 ES:'<rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/>',
@@ -849,7 +900,35 @@ const players=[
  P("madrid",1,1,"Courtois","GK","BE",50,20,70,55,90,78),P("madrid",1,17,"Cucurella","LB","ES",80,52,76,78,82,76),P("madrid",1,3,"Militão","CB","BR",82,45,64,66,86,84),P("madrid",1,4,"Huijsen","CB","ES",74,42,72,70,84,82),P("madrid",1,12,"Trent","RB","GB",76,66,90,80,76,72),
  P("madrid",1,5,"Bellingham","CM","GB",82,86,84,88,72,84),P("madrid",1,14,"Tchouaméni","CDM","FR",76,68,82,80,84,86),P("madrid",1,8,"Valverde","CM","UY",90,82,82,84,76,88),
  P("madrid",1,7,"Vinícius Jr.","LW","BR",95,84,76,95,30,68),P("madrid",1,10,"Mbappé","ST","FR",97,92,80,94,36,76),P("madrid",1,25,"Yan Diomande","RW","CI",91,78,72,88,36,68),
- P("madrid",0,13,"Lunin","GK","UA",48,18,66,50,84,72),P("madrid",0,22,"Rüdiger","CB","DE",80,50,60,62,87,86),P("madrid",0,24,"Dumfries","RB","NL",86,60,70,72,78,86),P("madrid",0,6,"Camavinga","CM","FR",80,60,80,84,80,80),P("madrid",0,20,"Bernardo Silva","CM","PT",72,74,88,92,64,66),P("madrid",0,15,"Arda Güler","CAM","TR",76,82,86,88,44,60),P("madrid",0,11,"Rodrygo","RW","BR",86,82,78,88,40,68),P("madrid",0,21,"Brahim Díaz","CAM","MA",78,78,80,87,42,64),P("madrid",0,9,"Endrick","ST","BR",84,86,66,80,32,76)];
+ P("madrid",0,13,"Lunin","GK","UA",48,18,66,50,84,72),P("madrid",0,22,"Rüdiger","CB","DE",80,50,60,62,87,86),P("madrid",0,24,"Dumfries","RB","NL",86,60,70,72,78,86),P("madrid",0,6,"Camavinga","CM","FR",80,60,80,84,80,80),P("madrid",0,20,"Bernardo Silva","CM","PT",72,74,88,92,64,66),P("madrid",0,15,"Arda Güler","CAM","TR",76,82,86,88,44,60),P("madrid",0,11,"Rodrygo","RW","BR",86,82,78,88,40,68),P("madrid",0,21,"Brahim Díaz","CAM","MA",78,78,80,87,42,64),P("madrid",0,9,"Endrick","ST","BR",84,86,66,80,32,76),
+ // Seleção portuguesa (convocatória Mundial 2026): OVR comprimido, máx. 78, sem PlayStyles
+ P("portugal",0,1,"Diogo Costa","GK","PT",44,17,64,48,79,70),
+ P("portugal",0,12,"José Sá","GK","PT",39,13,52,40,66,62),
+ P("portugal",0,22,"Rui Silva","GK","PT",37,12,54,41,63,59),
+ P("portugal",0,23,"Ricardo Velho","GK","PT",28,9,39,30,47,47),
+ P("portugal",0,2,"Diogo Dalot","RB","PT",71,53,68,69,69,68),
+ P("portugal",0,5,"Matheus Nunes","RB","PT",71,57,68,71,63,68),
+ P("portugal",0,27,"Nélson Semedo","RB","PT",70,43,61,62,63,60),
+ P("portugal",0,20,"João Cancelo","LB","PT",73,63,78,80,67,63),
+ P("portugal",0,19,"Nuno Mendes","LB","PT",85,53,71,77,77,73),
+ P("portugal",0,25,"Gonçalo Inácio","CB","PT",68,36,64,62,71,69),
+ P("portugal",0,3,"Renato Veiga","CB","PT",69,38,60,60,66,65),
+ P("portugal",0,4,"Rúben Dias","CB","PT",73,44,69,71,88,85),
+ P("portugal",0,14,"Tomás Araújo","CB","PT",69,33,56,58,67,67),
+ P("portugal",0,18,"Rúben Neves","CDM","PT",53,65,71,66,65,66),
+ P("portugal",0,6,"Samú Costa","CDM","PT",60,44,60,60,65,68),
+ P("portugal",0,15,"João Neves","CM","PT",74,56,76,80,76,73),
+ P("portugal",0,16,"Vitinha","CM","PT",72,66,86,84,66,63),
+ P("portugal",0,8,"Bruno Fernandes","CAM","PT",66,81,85,81,64,71),
+ P("portugal",0,10,"Bernardo Silva","CAM","PT",69,71,82,86,60,60),
+ P("portugal",0,11,"João Félix","CAM","PT",73,75,73,80,33,53),
+ P("portugal",0,24,"Trincão","RW","PT",69,59,62,69,28,49),
+ P("portugal",0,26,"Francisco Conceição","RW","PT",76,59,60,72,34,52),
+ P("portugal",0,21,"Pedro Neto","RW","PT",74,61,62,71,33,52),
+ P("portugal",0,17,"Rafael Leão","LW","PT",80,71,64,78,28,68),
+ P("portugal",0,13,"Gonçalo Guedes","ST","PT",71,61,54,64,28,57),
+ P("portugal",0,9,"Gonçalo Ramos","ST","PT",67,69,55,64,34,69),
+ P("portugal",0,7,"Cristiano Ronaldo","ST","PT",65,81,69,70,30,67)];
 const SKIN=["#f6d3b8","#e6b48e","#c98f63","#8f5a3a","#5b3a28"];
 const HAIR={k:"#15110f",d:"#3a2616",b:"#5a3b22",l:"#8a6a3d",y:"#c9a45a"};
 // [tom de pele, cor do cabelo, estilo, barba (0 / s=stubble / f=full)]
@@ -869,7 +948,8 @@ const SKNAME={e:"Elástico",r:"Roleta",p:"Pedalada"};
 players.forEach(d=>{d.ovr=ovrOf(d);d.slug=slug(d.name);const f=PROF[d.name]||[1,"d","short",0];d.pf={skin:SKIN[f[0]],hair:HAIR[f[1]],style:f[2],beard:f[3]};d.sig=skillOf(d)});
 const DEFAULT={},LINEUP={};
 for(const k of["barcelona","madrid"]){const a=players.filter(p=>p.team===k);DEFAULT[k]={xi:a.filter(p=>p.xi),bn:a.filter(p=>!p.xi)};LINEUP[k]={xi:DEFAULT[k].xi.slice(),bn:DEFAULT[k].bn.slice()}}
-const SQUADS={barcelona:{name:"FC Barcelona",short:"FCB",coach:"Hansi Flick",stadium:"Camp Nou"},madrid:{name:"Real Madrid",short:"RMA",coach:"José Mourinho",stadium:"Santiago Bernabéu"}};
+LINEUP.portugal={xi:[],bn:[]};DEFAULT.portugal={xi:[],bn:[]};
+const SQUADS={barcelona:{name:"FC Barcelona",short:"FCB",coach:"Hansi Flick",stadium:"Camp Nou"},madrid:{name:"Real Madrid",short:"RMA",coach:"José Mourinho",stadium:"Santiago Bernabéu"},portugal:{name:"Portugal",short:"POR",coach:"Roberto Martínez",stadium:"Estádio da Luz"}};
 const FORM=[[-48,0],[-34,-17],[-36,-6],[-36,6],[-34,17],[-20,-10],[-22,0],[-20,10],[-8,-18],[-6,0],[-8,18]];
 const LOG=[];let logOpen=false,logDirty=false,kickDesc=null;
 function gameClock(){const k=5400/matchTimer.duration,gs=matchTimer.period===2?2700+(matchTimer.elapsed-matchTimer.ht)*k:matchTimer.elapsed*k,cap=matchTimer.period===2?5400:2700;
@@ -945,7 +1025,8 @@ const PSD={fin:{n:"Especialista em Chute Colocado",i:"🎯",d:["Chutes colocados
 const PSX={"Lamine Yamal":[["ilu",2],["fin",2]],"Courtois":[["esp",2]],"Joan García":[["sai",2]],"Cucurella":[["acel",2]],"Raphinha":[["cold",2]],"Vinícius Jr.":[["ilu",2],["fin",2]],"Yan Diomande":[["acel",2],["fin",2]],"Bellingham":[["tiki",1],["bala",1]],"Pedri":[["tiki",2],["bala",1]],"Valverde":[["pow",2]],"Rodri":[["guard",2],["tiki",1]],"Koundé":[["acel",1]],"Balde":[["acel",2]],"Cubarsí":[["ant",1]],"Christensen":[["ant",1]],"Gavi":[["inc",2]],"Camavinga":[["inc",2]],"Rüdiger":[["int",2]],"Dumfries":[["hdr",1]],"Trent":[["cross",2]],"Cancelo":[["cross",1]],"Mbappé":[["rap",2]],"Militão":[["ant",2]]};
 const PSPOPS=[];
 function psPop(p,k,cd){if(!psLv(p,k)||gameState==="REPLAY")return;const n=performance.now(),m=p._pp||(p._pp={});if(n-(m[k]||0)<(cd||1.6)*1000)return;m[k]=n;PSPOPS.push({p,k,l:psLv(p,k)})}   // emblema por cima da cabeça quando o PlayStyle atua
-const psLv=(p,id)=>{const a=PSX[p.name];if(!a)return 0;const x=a.find(y=>y[0]===id);return x?x[1]:0};
+const psxOf=p=>p.team==="portugal"?undefined:PSX[p.name];
+const psLv=(p,id)=>{const a=psxOf(p);if(!a)return 0;const x=a.find(y=>y[0]===id);return x?x[1]:0};
 const maxSpd=p=>(3.8+p.st.pac*.048)*(stZ(p)===1?1-.05*fat(p):stZ(p)===2?1-.1*fat(p):stZ(p)===3?.82:1)*(p.inj===2?.5:p.inj===1?.9:1);
 const accel=p=>(WX.wet?1-.14*(1-p.st.dri/100):1)*(6+p.st.pac*.09)*(ball.owner===p?1+.11*psLv(p,"rap"):1+.11*psLv(p,"acel"))*(stZ(p)===2?1-.4*fat(p):stZ(p)===3?.55:1);
 const turnR=p=>(5+p.st.dri*.11)*(stZ(p)===0?1:stZ(p)===3?.8:1-.08*fat(p));                     // DRI: agilidade / raio de viragem
@@ -979,6 +1060,10 @@ function altOf(d){if(_altC.has(d.name))return _altC.get(d.name);const s=new Set(
 const EQ={LW:"LM",LM:"LW",RW:"RM",RM:"RW",ST:"CF",CF:"ST"},FITPEN=[-5,-2,0];
 function fitOf(x,lbl,i){const pos=typeof x==="string"?x:x.position;if(pos===lbl||EQ[pos]===lbl)return 2;if(typeof x!=="string"){const A=altOf(x);if(A.has(lbl)||(EQ[lbl]&&A.has(EQ[lbl])))return 2}return GRP[pos]===(GRP[lbl]||SLOT_GRP[i])?1:0}
 {const _mk0=mkPlayer;mkPlayer=(d,s,k,sd)=>{const p=_mk0(d,s,k,sd);refit(p);return p}}
+// onze automático para um conjunto de cartas (usado na equipa inicial e nas cartas da conta)
+function autoXI(pool){const FL=FORMS[sel.form].lbl,used=new Set(),xi=[];FL.forEach((l,i)=>{let best=null,bs=-1e9;for(const p of pool){if(used.has(p)||(i===0)!==(p.position==="GK"))continue;const v=p.ovr+FITPEN[fitOf(p,l,i)]*3;if(v>bs){bs=v;best=p}}
+ if(!best)for(const p of pool){if(used.has(p))continue;const v=p.ovr+FITPEN[fitOf(p,l,i)]*3;if(v>bs){bs=v;best=p}}used.add(best);xi.push(best)});return xi}
+{const pt=players.filter(p=>p.team==="portugal"),xi=autoXI(pt);LINEUP.portugal={xi,bn:pt.filter(p=>!xi.includes(p)).sort((a,b)=>b.ovr-a.ovr)};DEFAULT.portugal={xi:LINEUP.portugal.xi.slice(),bn:LINEUP.portugal.bn.slice()}}
 function refit(p){const d=p.d,lbl=FORMS[formOf[p.side]].lbl[p.slot],pen=FITPEN[fitOf(d,lbl,p.slot)];p.fitPen=pen;if(!pen){p.st=d;p.ovr=d.ovr;return}const s=Object.assign({},d);for(const k of["pac","sho","pas","dri","def","phy"])s[k]=Math.max(20,d[k]+pen);s.ovr=d.ovr+pen;p.st=s;p.ovr=s.ovr}
 function mkPlayer(d,slot,key,side){const F=FORMS[formOf[side]],f=F.f[slot];return{id:key+"_"+slot,d,name:d.name,num:d.num,team:key,side,slot,position:d.position,grp:F.g[slot],wb:F.wb.includes(slot),g:0,sh:0,tw:0,sv:0,reckless:false,ovr:d.ovr,mesh:null,st:d,pf:d.pf,
  currentStamina:100,isControlled:false,form:new T.Vector3(f[0]*side,0,f[1]*side),dir:new T.Vector3(side,0,0),vel:new T.Vector3(),in:new T.Vector3(),
@@ -1058,11 +1143,12 @@ function netStep(dt){if(!(dt>1e-4))return;const b=ball.position,OR=R*BS;let bvx=
 function crest(key){const[c,g]=cv2(256,256);g.scale(2,2);g.beginPath();g.moveTo(14,10);g.lineTo(114,10);g.lineTo(114,64);g.quadraticCurveTo(114,106,64,122);g.quadraticCurveTo(14,106,14,64);g.closePath();
  if(key==="barcelona"){g.save();g.clip();for(let i=0;i<6;i++){g.fillStyle=i%2?"#a50044":"#004d98";g.fillRect(14+i*100/6,40,100/6+1,90)}g.fillStyle="#edbb00";g.fillRect(10,6,110,36);g.restore();
   g.fillStyle="#004d98";g.font="800 30px Arial";g.textAlign="center";g.fillText("FCB",64,36)}
+ else if(key==="portugal"){g.save();g.clip();g.fillStyle="#006600";g.fillRect(14,10,40,120);g.fillStyle="#c8102e";g.fillRect(54,10,70,120);g.restore();g.fillStyle="#f5c400";g.beginPath();g.arc(54,56,22,0,7);g.fill();g.fillStyle="#fff";g.beginPath();g.arc(54,56,13,0,7);g.fill();g.fillStyle="#c8102e";g.fillRect(48,48,12,16);g.fillStyle="#fff";g.font="800 20px Arial";g.textAlign="center";g.fillText(SQUADS.portugal.short,64,104)}
  else{g.fillStyle="#fff";g.fill();g.fillStyle="#edbb00";g.beginPath();g.moveTo(34,40);g.lineTo(34,20);g.lineTo(48,32);g.lineTo(64,14);g.lineTo(80,32);g.lineTo(94,20);g.lineTo(94,40);g.closePath();g.fill();
   g.fillStyle="#1c3f94";g.font="800 44px Arial";g.textAlign="center";g.fillText("RM",64,88)}
  g.strokeStyle="#edbb00";g.lineWidth=5;g.stroke();return c.toDataURL()}
-const CR={barcelona:crest("barcelona"),madrid:crest("madrid")};
-const TEAMCOL={barcelona:"#a50044",madrid:"#edbb00"};
+const CR={barcelona:crest("barcelona"),madrid:crest("madrid"),portugal:crest("portugal")};
+const TEAMCOL={barcelona:"#a50044",madrid:"#edbb00",portugal:"#c8102e"};
 
 // ---------- Bonecos estilo FIFA (geometria procedural, cor de pele e cabelo por jogador) ----------
 const[sc,sg]=cv2(64,8);sg.fillStyle="#004d98";sg.fillRect(0,0,64,8);sg.fillStyle="#a50044";sg.fillRect(16,0,16,8);sg.fillRect(48,0,16,8);
@@ -1077,9 +1163,9 @@ function hairGroup(pf){const g=new T.Group(),hm=pm(pf.hair),S=pf.style;
   if(S==="curly")for(let i=0;i<13;i++){const a=i*2.4,k=i%3?1:.45,s=new T.Mesh(new T.SphereGeometry(.07,6,5),hm);s.position.set(Math.sin(a)*.16*k,.17+(i%3)*.03,Math.cos(a)*.16*k-.04);g.add(s)}
   if(S==="braids")for(let i=-2;i<=2;i++){const x=i*.07,y=Math.sqrt(Math.max(.01,.265*.265-x*x))*.97,b=new T.Mesh(new T.BoxGeometry(.04,.035,.36),hm);b.position.set(x,y-.01,-.04);g.add(b)}}
  return g}
-function build(p){const bar=p.team==="barcelona",gk=p.slot===0,g=new T.Group(),pf=p.pf,skin=pm(pf.skin);
- const shirt=gk?pm(bar?0xf2c200:0x22232e):bar?new T.MeshLambertMaterial({map:STR}):pm(0xf6f6f6),sleeve=gk?pm(bar?0xf2c200:0x22232e):bar?pm(0x004d98):pm(0xf6f6f6),
-  shorts=pm(gk?0x111111:bar?0x0a2a66:0xf6f6f6),sock=pm(gk?0x222222:bar?0xa50044:0xf6f6f6),boot=pm([0x111111,0xf2f2f2,0xff7a00,0x1d6bff][(p.num+p.slot)%4]);
+function build(p){const bar=p.team==="barcelona",por=p.team==="portugal",gk=p.slot===0,g=new T.Group(),pf=p.pf,skin=pm(pf.skin);
+ const shirt=gk?pm(bar?0xf2c200:por?0x1a8f3c:0x22232e):por?pm(0xc8102e):bar?new T.MeshLambertMaterial({map:STR}):pm(0xf6f6f6),sleeve=gk?pm(bar?0xf2c200:por?0x1a8f3c:0x22232e):por?pm(0x006600):bar?pm(0x004d98):pm(0xf6f6f6),
+  shorts=pm(gk?0x111111:por?0x006600:bar?0x0a2a66:0xf6f6f6),sock=pm(gk?0x222222:por?0xc8102e:bar?0xa50044:0xf6f6f6),boot=pm([0x111111,0xf2f2f2,0xff7a00,0x1d6bff][(p.num+p.slot)%4]);
  const torso=new T.Mesh(new T.CylinderGeometry(.34,.27,.74,14),shirt);torso.position.y=1.3;
  const hip=new T.Mesh(new T.CylinderGeometry(.28,.3,.22,12),shorts);hip.position.y=.93;
  const neck=new T.Mesh(new T.CylinderGeometry(.08,.09,.14,8),skin);neck.position.y=1.74;g.add(torso,hip,neck);
@@ -1090,7 +1176,7 @@ function build(p){const bar=p.team==="barcelona",gk=p.slot===0,g=new T.Group(),p
  head.add(hairGroup(pf));
  if(pf.beard){const bm=pm(pf.hair,pf.beard==="s"?{transparent:true,opacity:.42}:{}),b=new T.Mesh(new T.SphereGeometry(.2,10,8),bm);b.scale.set(1,.62,.85);b.position.set(0,-.12,.07);head.add(b)}
  g.add(head);
- const nb=new T.Mesh(new T.PlaneGeometry(.36,.36),new T.MeshBasicMaterial({map:numTex(p.num,gk?(bar?"#111":"#fff"):bar?"#edbb00":"#1c3f94"),transparent:true}));nb.position.set(0,1.35,-.3);nb.rotation.y=Math.PI;g.add(nb);
+ const nb=new T.Mesh(new T.PlaneGeometry(.36,.36),new T.MeshBasicMaterial({map:numTex(p.num,gk?(bar?"#111":"#fff"):por?"#f5c400":bar?"#edbb00":"#1c3f94"),transparent:true}));nb.position.set(0,1.35,-.3);nb.rotation.y=Math.PI;g.add(nb);
  p.legs=[-1,1].map(k=>{const l=new T.Group();l.position.set(k*.14,.9,0);
   const a=new T.Mesh(new T.CylinderGeometry(.145,.13,.4,10),shorts);a.position.y=-.2;
   const b=new T.Mesh(new T.CylinderGeometry(.095,.08,.5,8),sock);b.position.y=-.6;
@@ -2098,10 +2184,10 @@ const stars=o=>"★".repeat(cl(Math.round((o-62)/6),1,5))+"☆".repeat(5-cl(Math
 let bustN=0;
 function bust(k){const bar=k==="barcelona",n=++bustN;
  return `<svg viewBox="0 0 220 330" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><defs><pattern id="st${k}${n}" width="44" height="10" patternUnits="userSpaceOnUse"><rect width="22" height="10" fill="#004d98"/><rect x="22" width="22" height="10" fill="#a50044"/></pattern><linearGradient id="sk${k}${n}" x1="0" x2="1"><stop offset="0" stop-color="#27384e"/><stop offset="1" stop-color="#101a28"/></linearGradient></defs>
- <path d="M6 330V252Q10 206 80 190h60q70 16 74 62v78Z" fill="${bar?`url(#st${k}${n})`:"#f4f4f4"}"/><path d="M84 190q26 34 52 0Z" fill="#edbb00"/>
+ <path d="M6 330V252Q10 206 80 190h60q70 16 74 62v78Z" fill="${bar?`url(#st${k}${n})`:k==="portugal"?"#c8102e":"#f4f4f4"}"/><path d="M84 190q26 34 52 0Z" fill="#edbb00"/>
  <rect x="94" y="146" width="32" height="50" rx="12" fill="url(#sk${k}${n})"/><ellipse cx="110" cy="98" rx="42" ry="54" fill="url(#sk${k}${n})"/>
  <image href="${CR[k]}" x="148" y="214" width="34" height="34"/></svg>`}
-const STAR={barcelona:"lamine-yamal",madrid:"mbappe"};
+const STAR={barcelona:"lamine-yamal",madrid:"mbappe",portugal:"cristiano-ronaldo"};
 function star(k){const s=STAR[k];return `<img class="fph" alt="" src="fotos/${s}.png" data-s="${s}" data-x="0">`}
 function photo(p){return `<img class="ph" draggable="false" alt="" src="fotos/${p.slug}.png" data-s="${p.slug}" data-x="0">`}
 const PSI={
@@ -2136,7 +2222,7 @@ const psIcon=(k,l)=>PSN[k]?`<img class="pgm pgi ${l>1?"g":"s"}" data-k="${k}" da
 addEventListener("error",e=>{const t=e.target;if(t&&t.classList&&t.classList.contains("pgi")){const h=document.createElement("span");h.innerHTML=psSvg(t.dataset.k,+t.dataset.l);t.replaceWith(h.firstChild)}},true);
 function cardHTML(p,g,i,extra,ov){const at=g?` data-g="${g}" data-i="${i}"`:"",st=ks=>`<div>${ks.map(k=>`<span><b>${p[k]}</b>${k.toUpperCase()}</span>`).join("")}</div>`;
  const tr=p.ovr>=88?"t0":p.ovr>=82?"t1":p.ovr>=75?"t2":"t3";
- return `<div class="fc ${tr}${extra||""}"${at} title="${p.name}"><div class="fc-l"><b>${p.ovr}</b><i>${p.position}</i><span class="fl">${flag(p.country)}</span><img class="cl" data-crest="${p.team}" src="${CR[p.team]}" alt=""></div><div class="fc-ph">${photo(p)}</div><div class="fc-nm">${shortName(p.name)}</div><div class="fc-st">${st(["pac","sho","pas"])}${st(["dri","def","phy"])}</div>${ov||""}${(PSX[p.name]||[]).length?`<div class="fc-pb">${PSX[p.name].map(([k,l])=>psIcon(k,l)).join("")}</div>`:""}</div>`}
+ return `<div class="fc ${tr}${extra||""}"${at} title="${p.name}"><div class="fc-l"><b>${p.ovr}</b><i>${p.position}</i><span class="fl">${flag(p.country)}</span><img class="cl" data-crest="${p.team}" src="${CR[p.team]}" alt=""></div><div class="fc-ph">${photo(p)}</div><div class="fc-nm">${shortName(p.name)}</div><div class="fc-st">${st(["pac","sho","pas"])}${st(["dri","def","phy"])}</div>${ov||""}${(psxOf(p)||[]).length?`<div class="fc-pb">${psxOf(p).map(([k,l])=>psIcon(k,l)).join("")}</div>`:""}</div>`}
 
 // ----- Menu principal (inspirado no FIFA 19) -----
 function seg(attr,items,cur){return items.map(([v,l])=>`<button data-a="${attr}:${v}" aria-pressed="${String(v)===String(cur)}">${l}</button>`).join("")}
@@ -2145,7 +2231,7 @@ function box(cls,title,inner){return `<div class="tile ${cls} box"><h3>${title}<
 function pickHTML(){return `<div class="pk"><h2>Escolhe o teu clube</h2><div class="cs">${["barcelona","madrid"].map(t=>`<div class="cd${sel.team===t?" cur":""}" data-a="pick:${t}" role="button" tabindex="0"><img data-crest="${t}" src="${CR[t]}" alt=""><b>${SQUADS[t].name}</b><small>Treinador: ${SQUADS[t].coach}</small></div>`).join("")}</div><button class="bk" data-a="pickx">VOLTAR</button></div>`}
 function renderMenu(){const k=sel.team,o=other(k);
  const tabs=[["home","Início"],["play","Jogar"],["online","Online"],["custom","Personalizar"]];
- const kick=`<div class="tile tl1" data-a="pre" role="button" tabindex="0"><h3>KICK OFF</h3><span class="new">NOVO</span><div class="kc"><div class="nm">${SQUADS[k].name}</div><div class="row"><img data-a="swap" data-crest="${k}" src="${CR[k]}" alt="Trocar equipa" title="Toca para trocar de equipa"><i class="vv">V</i><img data-crest="${o}" src="${CR[o]}" alt=""></div><div class="nm">${SQUADS[o].name}</div></div><div class="lg">LALIGA</div></div>`;
+ const kick=`<div class="tile tl1" data-a="pre" role="button" tabindex="0"><h3>KICK OFF</h3><span class="new">NOVO</span><div class="kc"><div class="nm">${SQUADS[k].name}</div><div class="row"><img data-crest="${k}" src="${CR[k]}" alt=""><i class="vv">V</i><img data-crest="${o}" src="${CR[o]}" alt=""></div><div class="nm">${SQUADS[o].name}</div></div><div class="lg">LALIGA</div></div>`;
  const career=`<div class="tile tl2" data-a="squad" role="button" tabindex="0"><div class="art"></div><h3>Gerir<br>equipa</h3><small>CARTAS · FORMAÇÃO</small></div>`;
  const video=`<div class="tile tl3" data-a="pre" role="button" tabindex="0"><div class="pl">▶</div><b>CLÁSICO 3D</b></div>`;
  const dif=cls=>`<div class="tile ${cls}"><h3>DIFICULDADE</h3><div class="chips">${seg("diff",Object.keys(DIFFS).map(d=>[d,DIFFS[d].label]),sel.diff)}</div><p>${DIFFS[sel.diff].desc}</p></div>`;
@@ -2214,13 +2300,13 @@ function squadHTML(){const k=sel.team,LU=LINEUP[k];if(!selCard||![...LU.xi,...LU
  const st=[["OVR",sp.ovr],["PAC",sp.pac],["SHO",sp.sho],["PAS",sp.pas],["DRI",sp.dri],["DEF",sp.def],["PHY",sp.phy]];
  const empt=Math.max(0,3-0);
  return `<div class="sq fifa"><div class="fp-bg"><div class="fp-grass"><svg viewBox="0 0 100 140" preserveAspectRatio="none"><g fill="none" stroke="rgba(255,255,255,.55)" stroke-width=".7"><rect x="4" y="3" width="92" height="134"/><line x1="4" y1="70" x2="96" y2="70"/><circle cx="50" cy="70" r="11"/><rect x="25" y="3" width="50" height="22"/><rect x="38" y="3" width="24" height="8"/><rect x="25" y="115" width="50" height="22"/><rect x="38" y="129" width="24" height="8"/></g></svg></div><div class="fp-vig"></div></div>
- <div class="fp-tl"><div class="fp-sw">${["barcelona","madrid"].map(t=>`<button data-a="team:${t}" aria-pressed="${t===k}"><img data-crest="${t}" src="${CR[t]}" alt="">${SQUADS[t].short}</button>`).join("")}</div>
+ <div class="fp-tl"><div class="fp-sw"><button aria-pressed="true"><img data-crest="${k}" src="${CR[k]}" alt="">${SQUADS[k].short}</button></div>
  <div class="fp-club"><img data-crest="${k}" src="${CR[k]}" alt=""><div><b>${SQUADS[k].name}</b><span class="stars">${stars(ovr)}</span></div><div class="ovrb"><i>OVR</i><b>${ovr}</b></div></div>
  <div class="fp-tm">Team Management</div>
  <div class="pmenu">${planDD("plpick")}
  <button data-a="ptab:plans"><i>▦</i>GAME PLANS</button><button data-a="sauto"><i>⟳</i>AUTO BUILD</button><button data-a="sres"><i>☰</i>RESERVES</button><button data-a="sedit"><i>✎</i>TEAM EDITING</button></div><span class="nt" id="note">Arrasta um suplente para um titular (ou troca titulares entre si).</span></div>
  <div class="pf">${slots}<div class="fname">${sel.form}</div></div>
- <div class="fp-r"><div class="fp-face"><svg viewBox="0 0 40 40"><circle cx="20" cy="15" r="8" fill="#6b5a45"/><path d="M4 40c2-12 8-15 16-15s14 3 16 15z" fill="#6b5a45"/></svg><i>${sp.position}</i></div><div class="fp-nm">${sp.name}</div><div class="fp-ps">${POSPT[sp.position]||sp.position}</div>${(PSX[sp.name]||[]).length?`<div class="fp-ps2">${PSX[sp.name].map(([k,l])=>`<div class="psb ${l>1?"g":"s"}" title="${PSD[k].n} · Nível ${l} (${l>1?"Ouro":"Prata"}): ${PSD[k].d[l-1]}">${psIcon(k,l)}<span>${PSD[k].n}<em>${l>1?"Nv.2 · Ouro":"Nv.1 · Prata"}</em></span></div>`).join("")}</div>`:""}<div class="fp-st">${st.map(([l,v])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div></div>
+ <div class="fp-r"><div class="fp-face"><svg viewBox="0 0 40 40"><circle cx="20" cy="15" r="8" fill="#6b5a45"/><path d="M4 40c2-12 8-15 16-15s14 3 16 15z" fill="#6b5a45"/></svg><i>${sp.position}</i></div><div class="fp-nm">${sp.name}</div><div class="fp-ps">${POSPT[sp.position]||sp.position}</div>${(psxOf(sp)||[]).length?`<div class="fp-ps2">${psxOf(sp).map(([k,l])=>`<div class="psb ${l>1?"g":"s"}" title="${PSD[k].n} · Nível ${l} (${l>1?"Ouro":"Prata"}): ${PSD[k].d[l-1]}">${psIcon(k,l)}<span>${PSD[k].n}<em>${l>1?"Nv.2 · Ouro":"Nv.1 · Prata"}</em></span></div>`).join("")}</div>`:""}<div class="fp-st">${st.map(([l,v])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div></div>
  <div class="fp-bench${resOpen?" open":""}"><span class="res">RES</span>${LU.bn.map((p,i)=>cardHTML(p,"bn",i,p===selCard?" sel":"")).join("")}<i class="es"></i><i class="es"></i><i class="es"></i></div></div>`}
 function renderPre(){const body=preTab==="preview"?pvHTML():preTab==="squad"?squadHTML():preTab==="plans"?plansHTML():preTab==="settings"?setHTML():preTab==="controls"?ctlHTML():statHTML();
  $("pre").innerHTML=`<div class="pre-top"><span class="kol">KO</span><b>Kick Off</b><nav class="ptabs">${PTABS.map(([v,l])=>`<button data-a="ptab:${v}" aria-pressed="${v===preTab}">${l}</button>`).join("")}</nav></div><div class="pre-body">${body}</div><div class="pre-foot"><small>Esc · Voltar</small><span class="sp"></span><button class="btn ghost" data-a="back">Voltar</button><button class="btn go" data-a="start">Iniciar jogo ▶</button></div>`}
@@ -2266,7 +2352,7 @@ let shTab="sum",shP=null;
 function sigAt(p,dist,mode,v){const s=p.st.sho/100;let sg=(1-s)*2.6+.4+over(v)*4.5;if(mode==="p")sg*=1.25;if(mode==="f")sg*=.5;sg+=Math.max(0,dist-9)*.07*(1.2-s*.5)*(mode==="p"?1.15:mode==="f"?.9:1);sg+=Math.pow(Math.max(0,dist-16),1.45)*.05*(1.3-s*.55)*(mode==="f"?.8:1);sg+=v*v*1.1*(1.2-s*.45)*(mode==="f"?.7:1);const ps=mode==="f"?psLv(p,"fin"):mode==="p"?psLv(p,"pow"):dist<30?psLv(p,"cold"):0;sg*=1-.12*ps;if(pss(p)!==mode)sg*=1.1;return sg}
 function erf(x){const t=1/(1+.3275911*Math.abs(x)),y=1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-.284496736)*t+.254829592)*t*Math.exp(-x*x);return x>=0?y:-y}
 const onT=(p,d,m,v)=>Math.round(100*erf(GW/(sigAt(p,d,m,v)*.7*Math.SQRT2)));
-function sheetHTML(p){const f=pinf(p.name),w=(5-f.wf)/4,PS=PSX[p.name]||[],A=[...altOf(p)],ss=pss(p),SS=SSN[ss],nm=p.name.split(" "),first=nm.length>1&&nm[nm.length-1]!=="Jr."?nm.slice(0,-1).join(" "):"",last=first?nm[nm.length-1]:p.name,
+function sheetHTML(p){const f=pinf(p.name),w=(5-f.wf)/4,PS=psxOf(p)||[],A=[...altOf(p)],ss=pss(p),SS=SSN[ss],nm=p.name.split(" "),first=nm.length>1&&nm[nm.length-1]!=="Jr."?nm.slice(0,-1).join(" "):"",last=first?nm[nm.length-1]:p.name,
  st=(n,v)=>`<div class="sv"><b style="color:${statCol(v)}">${v}</b><span>${n}</span></div>`,tabs=[["sum","RESUMO"],["att","ATRIBUTOS"],["tr","TRAÇOS"]],
  CH=charsOf(p);
  const head=`<div class="sh-hd"><button class="sh-x" data-a="shclose" aria-label="Fechar">✕</button><small>${first.toUpperCase()}</small><h2>${last.toUpperCase()}</h2><div class="sh-meta"><span>${f.h} cm</span><span>${f.w} kg</span><span>Idade ${f.a}</span><span class="pfx">Pé preferido ${feet(f)}</span><span>${flag(p.country)} ${p.country}</span><span>LaLiga</span></div></div>`;
@@ -2342,7 +2428,7 @@ function renderPause(){if(rivalView)return renderRival();const k=sel.team,o=othe
 function ring(v,col){const r=46,c=2*Math.PI*r;return `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="${r}" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2"/><circle cx="50" cy="50" r="${r}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="${(c*.75*v).toFixed(1)} ${c}" transform="rotate(0 50 50)"/></svg>`}
 let series=null;const serTxt=()=>sel.mode==="serie"&&series?` · MELHOR DE 3: ${series.w[0]}-${series.w[1]} após ${series.g} jogo(s)${series.done?(series.w[0]>series.w[1]?" · SÉRIE GANHA!":series.w[0]<series.w[1]?" · série perdida":" · série empatada"):""}`:"",serBtn=()=>sel.mode==="serie"&&series&&!series.done?`Jogo ${series.g+1} da série ▶`:sel.mode==="serie"?"Nova série ▶":"Jogar de novo ▶";
 function finish(){try{document.exitPointerLock&&document.exitPointerLock()}catch(e){}crowdStop();sfx("whistleEnd");gameState="GAME_OVER";charge.on=false;sp=null;const a=score.home,b=score.away,hk=sel.team,ok=other(hk);
- HIST.push({t:hk,h:a,a:b,sh:[shots[0],shots[1]]});saveHist();if(!TRAIN&&window.__pzReport)window.__pzReport(hk,a,b);if(sel.mode==="serie"&&series&&!series.done){series.g++;if(a>b)series.w[0]++;else if(b>a)series.w[1]++;series.done=series.w[0]>=2||series.w[1]>=2||series.g>=5||(series.g>=3&&series.w[0]!==series.w[1])}
+ HIST.push({t:hk,h:a,a:b,sh:[shots[0],shots[1]]});saveHist();if(!TRAIN&&window.__pzReport)window.__pzReport(hk,a,b);rollOpp();if(sel.mode==="serie"&&series&&!series.done){series.g++;if(a>b)series.w[0]++;else if(b>a)series.w[1]++;series.done=series.w[0]>=2||series.w[1]>=2||series.g>=5||(series.g>=3&&series.w[0]!==series.w[1])}
  const r=rec(hk),cv=(g,s)=>s?Math.round(g/s*100):0,c1=cv(a,shots[0]),c2=cv(b,shots[1]);
  const l5=HIST.slice(-5).reverse().map(x=>{const me=x.t===hk,p=me?x.h:x.a,q=me?x.a:x.h;return `<div class="r"><img data-crest="${hk}" src="${CR[hk]}" alt=""><span class="ch${p>q?" w":""}">${p} - ${q}</span><img data-crest="${ok}" src="${CR[ok]}" alt=""></div>`}).join("");
  const pcs=(mstat.poss[0]+mstat.poss[1])||1,p1=Math.round(mstat.poss[0]/pcs*100),p2=100-p1,rate=p=>6+p.g*1.3+p.sh*.1+p.tw*.18+p.sv*.35+((p.side>0?a>b:b>a)?.5:0);
@@ -2362,7 +2448,7 @@ function finish(){try{document.exitPointerLock&&document.exitPointerLock()}catch
  <div class="ov-extra">${pst}${motm}</div>
  <div class="ov-foot"><small>Fim do jogo${serTxt()}</small><span class="sp"></span><button class="btn ghost" data-a="back">Menu principal</button><button class="btn go" data-a="again">${serBtn()}</button></div>`;
  showScr("over");beep(330,.6)}
-function startGame(){score.home=score.away=0;shots=[0,0];TRAIN=sel.mode==="treino";if(sel.mode==="serie"&&(!series||series.done))series={w:[0,0],g:0,done:false};matchTimer.duration=TRAIN?3600:sel.dur;matchTimer.elapsed=0;matchTimer.period=1;matchTimer.ht=0;matchTimer.add1=matchTimer.add2=null;matchTimer.extra=0;htPause=false;addBanner=null;clock=0;$("goal").hidden=true;clearKeys();sel.aiForm=Object.keys(FORMS)[Math.floor(Math.random()*5)];buildTeams();initSubs();resetStats();resetKickoff(1);applyWX();
+function startGame(){window.__pzSaveLU&&window.__pzSaveLU();score.home=score.away=0;shots=[0,0];TRAIN=sel.mode==="treino";if(sel.mode==="serie"&&(!series||series.done))series={w:[0,0],g:0,done:false};matchTimer.duration=TRAIN?3600:sel.dur;matchTimer.elapsed=0;matchTimer.period=1;matchTimer.ht=0;matchTimer.add1=matchTimer.add2=null;matchTimer.extra=0;htPause=false;addBanner=null;clock=0;$("goal").hidden=true;clearKeys();sel.aiForm=Object.keys(FORMS)[Math.floor(Math.random()*5)];buildTeams();initSubs();resetStats();resetKickoff(1);applyWX();
  const hk=sel.team,ok=other(hk);$("pcc").src=CR[hk];$("rc").src=CR[ok];$("th").textContent=SQUADS[hk].short;$("sbhc").src=CR[hk];$("sbac").src=CR[ok];$("ta").textContent=SQUADS[ok].short;
  $("sbh").style.setProperty("--tc",TEAMCOL[hk]);$("sba").style.setProperty("--tc",TEAMCOL[ok]);
  showScr("hud");gameState="PLAYING";mAim.x=mAim.z=0;lockMouse();showKeys=true;$("keys").hidden=false;clearTimeout(keysT);keysT=setTimeout(()=>{showKeys=false;$("keys").hidden=true},10000);hudH=null;sfx("whistle");crowdStart()}
@@ -2390,12 +2476,12 @@ document.addEventListener("click",e=>{if(ddOpen&&!(e.target.closest&&e.target.cl
  if(v==="sres"){resOpen=!resOpen;renderPre();return}
  if(v==="sauto"){const LU=LINEUP[sel.team];let n=0;LU.xi.forEach((p,i)=>{let bj=-1,bo=p.ovr;LU.bn.forEach((d,j)=>{if(d.position===p.position&&d.ovr>bo){bo=d.ovr;bj=j}});if(bj>=0){const t=LU.xi[i];LU.xi[i]=LU.bn[bj];LU.bn[bj]=t;n++}});renderPre();note(n?"AUTO BUILD: "+n+" posição(ões) melhorada(s) com o melhor jogador da mesma posição":"AUTO BUILD: o onze já é o melhor para cada posição");return}
  if(v==="tab"){menuTab=x;renderMenu()}
- else if(v==="swap"){sel.team=other(sel.team);selCard=null;renderMenu()}
- else if(v==="pre"){if(!$("menu").hidden){picking=true;renderMenu()}else goPre("preview")}
+ else if(v==="swap"){}
+ else if(v==="pre"){if(!$("menu").hidden){sel.team="portugal";rollOpp();selCard=null;(window.__pzPrep&&window.__pzPrep());goPre("preview")}else goPre("preview")}
  else if(v==="pick"){sel.team=x;selCard=null;picking=false;goPre("preview")}
  else if(v==="team"){sel.team=x;selCard=null;renderPre()}
  else if(v==="pickx"){picking=false;renderMenu()}
- else if(v==="squad")goPre("squad");
+ else if(v==="squad"){sel.team="portugal";(window.__pzPrep&&window.__pzPrep());goPre("squad")}
  else if(v==="diff"||v==="dur"||v==="cam"||v==="wx"||v==="tod"||v==="mode"){if(v==="diff")sel.diff=x;else if(v==="dur")sel.dur=+x;else if(v==="wx")sel.wx=x;else if(v==="tod")sel.tod=x;else if(v==="mode")sel.mode=x;else camMode=+x;if(!$("menu").hidden)renderMenu();else renderPre()}
  else if(v==="ptab"){preTab=x;renderPre()}
  else if(v==="back")goMenu();else if(v==="start"||v==="again")startGame();
@@ -2421,7 +2507,7 @@ function minimap(){const w=460,h=250,X=x=>(x+L)/(2*L)*w,Z=z=>(z+W)/(2*W)*h;mg.cl
 function hud(){if($("hud").hidden||!H)return;
  setTxt("sh",score.home);setTxt("sa",score.away);
  setTxt("clk",gameClock());
- if(hudH!==H){hudH=H;const d=H.d;setTxt("pn",shortName(H.name).toUpperCase());setTxt("pnum",H.num);setTxt("ppos",H.position);$("pfl").innerHTML=flag(d.country)+" "+(COUNTRY[d.country]||d.country);setTxt("pclub",d.club);{const fi=pinf(H.name);$("psk").innerHTML=`<svg class="run" viewBox="0 0 16 18"><circle cx="10" cy="3" r="2.200"/><path d="M8 6l3 1 2 3-1.200.8-1.500-2-1 2.500 2 2.500-.5 4H8l.2-3.500-2-1.500L5 14H3l1.500-5z"/></svg><span class="stars">${"★".repeat(fi.sm)}<u>${"★".repeat(5-fi.sm)}</u></span>${feet(fi)}<span class="hgm">${(PSX[H.name]||[]).map(([k,l])=>psIcon(k,l)).join("")}</span>`}
+ if(hudH!==H){hudH=H;const d=H.d;setTxt("pn",shortName(H.name).toUpperCase());setTxt("pnum",H.num);setTxt("ppos",H.position);$("pfl").innerHTML=flag(d.country)+" "+(COUNTRY[d.country]||d.country);setTxt("pclub",d.club);{const fi=pinf(H.name);$("psk").innerHTML=`<svg class="run" viewBox="0 0 16 18"><circle cx="10" cy="3" r="2.200"/><path d="M8 6l3 1 2 3-1.200.8-1.500-2-1 2.500 2 2.500-.5 4H8l.2-3.500-2-1.500L5 14H3l1.500-5z"/></svg><span class="stars">${"★".repeat(fi.sm)}<u>${"★".repeat(5-fi.sm)}</u></span>${feet(fi)}<span class="hgm">${(psxOf(H)||[]).map(([k,l])=>psIcon(k,l)).join("")}</span>`}
   $("pst").innerHTML=["pac","sho","pas","dri","def","phy"].map(k=>`<span><b>${d[k]}</b>${k.toUpperCase()}</span>`).join("")}
  const s=$("st"),pc=H.currentStamina,col=H.tired||pc<25?"#ff453a":pc<50?"#ffd60a":"#2be0cb";s.style.width=pc+"%";s.style.background=col;
  let st="free",tx="SEM BOLA";
@@ -2660,14 +2746,19 @@ const PZ={user:null,data:null,view:"shop",flt:"all",res:null,busy:false,loaded:f
 window.__pzOn=true;
 const PZR=[{k:"N",n:"FERRO",c:"#9aa4b0"},{k:"R",n:"OURO",c:"#e3b93f"},{k:"E",n:"OURO RARO",c:"#ffcf3a"},{k:"L",n:"LENDÁRIO",c:"#ffb800"}];
 const pzRar=o=>o>=88?PZR[3]:o>=84?PZR[2]:o>80?PZR[1]:PZR[0];   // ≤80 = ferro; acima = dourada (o brilho sobe com a raridade)
-const pzMin=Math.min(...players.map(p=>p.ovr)),pzW=players.map(p=>Math.exp(-(p.ovr-pzMin)*.2)),pzWT=pzW.reduce((a,b)=>a+b,0);
-const pzId=p=>p.slug.replace(/-/g,"_"),pzBy={};players.forEach(p=>pzBy[pzId(p)]=p);
-function pzRoll(){let r=Math.random()*pzWT;for(let i=0;i<players.length;i++){r-=pzW[i];if(r<=0)return players[i]}return players[players.length-1]}
-const pzNeed=l=>100+30*(l-1),pzXPB={N:20,R:40,E:80,L:150};
+const pzPool=players.filter(p=>p.team!=="portugal"),pzMin=Math.min(...pzPool.map(p=>p.ovr)),pzW=pzPool.map(p=>Math.exp(-(p.ovr-pzMin)*.2)),pzWT=pzW.reduce((a,b)=>a+b,0);
+const pzId=p=>(p.team==="portugal"?"por_":"")+p.slug.replace(/-/g,"_"),pzBy={};players.forEach(p=>pzBy[pzId(p)]=p);
+function pzRoll(){let r=Math.random()*pzWT;for(let i=0;i<pzPool.length;i++){r-=pzW[i];if(r<=0)return pzPool[i]}return pzPool[pzPool.length-1]}
+const pzNeed=l=>100+30*(l-1),pzXPR={w:60,d:30,l:15};
 function pzLvl(xp){let l=1,x=xp|0;while(x>=pzNeed(l)){x-=pzNeed(l);l++}return{l,x,n:pzNeed(l)}}
-function pzCalc(d){const p=pzRoll(),cards=d.cards||{},id=pzId(p),isNew=!cards[id],r=pzRar(p.ovr),g=Math.round(pzXPB[r.k]*(isNew?1.5:1)),xp=(d.xp||0)+g,a=pzLvl(d.xp||0).l,b=pzLvl(xp).l;
- return{id,p,isNew,copies:(cards[id]||0)+1,g,xp,level:b,up:b>a,r}}
-const pzOdds=()=>PZR.map(r=>{const t=players.reduce((s,p,i)=>s+(pzRar(p.ovr)===r?pzW[i]:0),0)/pzWT*100;return{r,t}});
+// pack: gasta 1 ticket e dá 1 carta (sem XP)
+function pzCalc(d){const p=pzRoll(),cards=d.cards||{},id=pzId(p),isNew=!cards[id];
+ return{id,p,isNew,copies:(cards[id]||0)+1,tl:(d.tickets|0)-1,r:pzRar(p.ovr)}}
+// jogo: XP por resultado; tickets só ao subir de nível (1 por nível)
+function pzMatch(d,r){const s=Object.assign({w:0,d:0,l:0},d.stats),x0=d.xp|0,x1=x0+pzXPR[r],a=pzLvl(x0).l,b=pzLvl(x1).l;s[r]++;
+ return{stats:{w:s.w,d:s.d,l:s.l},xp:x1,level:b,tickets:(d.tickets|0)+(b-a),gain:pzXPR[r],up:b-a}}
+const pzStarter=players.filter(p=>p.team==="portugal").map(pzId);
+const pzOdds=()=>PZR.map(r=>{const t=pzPool.reduce((s,p,i)=>s+(pzRar(p.ovr)===r?pzW[i]:0),0)/pzWT*100;return{r,t}});
 const pzEsc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pzTkSvg='<svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2.5a2.5 2.5 0 0 0 0 5V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2.5a2.5 2.5 0 0 0 0-5z" fill="#ffd60a" stroke="#7a5a06" stroke-width="1.2"/><path d="M14 6v12" stroke="#7a5a06" stroke-width="1.4" stroke-dasharray="2 2"/></svg>';
 const pzCard=(p,extra)=>cardHTML(p,null,null," pkc r"+pzRar(p.ovr).k+(extra||""));
@@ -2675,9 +2766,28 @@ const pzOwned=()=>(PZ.data&&PZ.data.cards)||{};
 const pzSt=()=>Object.assign({w:0,d:0,l:0},(PZ.data&&PZ.data.stats)||{});
 window.__pzRec=()=>{const s=pzSt();return{w:s.w,d:s.d,l:s.l}};
 window.__pzReport=function(team,gf,ga){if(!window.FB||!window.FB.reportMatch||!PZ.data)return;
- const r=gf>ga?"w":gf<ga?"l":"d",ap=s=>{s=Object.assign({w:0,d:0,l:0},s);s[r]++;return{w:s.w,d:s.d,l:s.l}},bak=PZ.data;
- PZ.data=Object.assign({},PZ.data,{stats:ap(pzSt())});           // pré-visualização imediata no ecrã final
- window.FB.reportMatch(ap).catch(e=>{PZ.data=bak;console.warn("Resultado não guardado:",e&&e.code||e)})};
+ const r=gf>ga?"w":gf<ga?"l":"d",bak=PZ.data,m=pzMatch(bak,r);
+ PZ.data=Object.assign({},bak,{stats:m.stats,xp:m.xp,level:m.level,tickets:m.tickets});   // pré-visualização imediata
+ pzToast("+"+m.gain+" XP"+(m.up?"  ·  NÍVEL "+m.level+"  ·  +"+m.up+" TICKET"+(m.up>1?"S":""):""),!!m.up?0:1);
+ window.FB.reportMatch(d=>pzMatch(d,r)).catch(e=>{PZ.data=bak;console.warn("Resultado não guardado:",e&&e.code||e)})};
+
+// ---- nome da equipa = utilizador (3 letras) ----
+function pzBrand(){if(!PZ.user)return;const nm=String((PZ.data&&PZ.data.name)||PZ.user.name||"").replace(/[^A-Za-z0-9À-ÿ]/g,""),ab=(nm.slice(0,3)||"TU").toUpperCase(),S=SQUADS.portugal;
+ if(S.short===ab&&S.name===(nm||ab))return;S.short=ab;S.name=nm||ab;CLUBS.portugal=S.name;players.forEach(p=>{if(p.team==="portugal")p.club=S.name});CR.portugal=crest("portugal");try{refreshCrests()}catch(_){}}
+// ---- equipa = só cartas que possuis ----
+const pzLuKey=()=>"c3d_lu_"+(PZ.user&&PZ.user.uid);
+function pzPrep(){const d=PZ.data;if(!d||!PZ.user)return;pzBrand();const own=pzOwned(),pool=players.filter(p=>own[pzId(p)]),sig=PZ.user.uid+"|"+pool.map(pzId).sort().join(",");
+ if(PZ.luSig===sig&&LINEUP.portugal.xi.length===11)return;
+ let keep=null;
+ if(PZ.luUid===PZ.user.uid&&LINEUP.portugal.xi.length===11)keep={xi:LINEUP.portugal.xi.map(pzId),bn:LINEUP.portugal.bn.map(pzId)};
+ else try{keep=JSON.parse(localStorage.getItem(pzLuKey())||"null")}catch(_){}
+ const by={};pool.forEach(p=>by[pzId(p)]=p);let xi=[],bn=[];
+ if(keep&&keep.xi&&keep.xi.length===11&&keep.xi.every(i=>by[i])){xi=keep.xi.map(i=>by[i]);bn=(keep.bn||[]).filter(i=>by[i]&&!keep.xi.includes(i)).map(i=>by[i])}
+ else xi=autoXI(pool);
+ const have=new Set([...xi,...bn]);pool.filter(p=>!have.has(p)).sort((a,b)=>b.ovr-a.ovr).forEach(p=>bn.push(p));
+ LINEUP.portugal.xi=xi;LINEUP.portugal.bn=bn;PZ.luSig=sig;PZ.luUid=PZ.user.uid}
+window.__pzPrep=pzPrep;
+window.__pzSaveLU=function(){if(!PZ.user)return;try{localStorage.setItem(pzLuKey(),JSON.stringify({xi:LINEUP.portugal.xi.map(pzId),bn:LINEUP.portugal.bn.map(pzId)}))}catch(_){}};
 
 // ---- barra de conta no menu ----
 function acctBar(){if(!window.__pzOn)return"";const d=PZ.data;if(!PZ.user||!d)return"";const L=pzLvl(d.xp||0);
@@ -2704,22 +2814,29 @@ function auInit(){const FBx=window.FB,w=$("auW");
   if(u&&u.error){$("auE").textContent=auErr(u.error);PZ.loaded=false}
   if(u&&d&&prev&&d.tickets>prev.tickets&&PZ.view!=="anim"){pzToast("+"+(d.tickets-prev.tickets)+" ticket"+(d.tickets-prev.tickets>1?"s":"")+" recebido"+(d.tickets-prev.tickets>1?"s":""))}
   auShow();if(!u)pzClose(true);
+  if(u&&d&&!d.country){PZ.view="country";$("pz").hidden=false;if(!PZ.cSel||PZ.cSel!=="PT")PZ.cSel="PT";pzRender();return}
+  if(u&&d&&d.country&&PZ.view==="country"){PZ.view="shop";$("pz").hidden=true;PZ.busy=false}
+  if(u&&d&&d.country){pzBrand();pzPrep()}
   if(!$("menu").hidden)renderMenu();
   if(!$("pz").hidden&&(PZ.view==="shop"||PZ.view==="coll"||PZ.view==="prof"))pzRender()})}
 if(window.FB)auInit();else{addEventListener("fbready",auInit);setTimeout(()=>{if(!window.FB){$("auW").hidden=false;$("auW").textContent="Não foi possível carregar o Firebase (sem internet?)."}},9000)}
 auSet("in");auShow();
 
-function pzToast(m){let t=$("pzToast");if(!t){t=document.createElement("div");t.id="pzToast";t.style.cssText="position:fixed;left:50%;top:70px;transform:translateX(-50%);z-index:80;background:#ffd60a;color:#111;padding:8px 20px;border-radius:18px;font:800 20px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.06em;transition:opacity .4s;pointer-events:none";document.body.appendChild(t)}
- t.textContent="🎫 "+m;t.style.opacity=1;clearTimeout(t._t);t._t=setTimeout(()=>t.style.opacity=0,2600)}
+function pzToast(m,plain){let t=$("pzToast");if(!t){t=document.createElement("div");t.id="pzToast";t.style.cssText="position:fixed;left:50%;top:70px;transform:translateX(-50%);z-index:80;background:#ffd60a;color:#111;padding:8px 20px;border-radius:18px;font:800 20px 'Barlow Condensed',Arial,sans-serif;letter-spacing:.06em;transition:opacity .4s;pointer-events:none";document.body.appendChild(t)}
+ t.textContent=(plain?"":"🎫 ")+m;t.style.opacity=1;clearTimeout(t._t);t._t=setTimeout(()=>t.style.opacity=0,2600)}
 
 // ---- overlay ----
 function pzOpen(v){PZ.view=v;$("pz").hidden=false;pzRender()}
-function pzClose(f){if(PZ.view==="anim"&&!f)return;$("pz").hidden=true;PZ.view="shop";PZ.busy=false;if(!$("menu").hidden)renderMenu()}
+function pzClose(f){if((PZ.view==="anim"||PZ.view==="country")&&!f)return;$("pz").hidden=true;PZ.view="shop";PZ.busy=false;if(!$("menu").hidden)renderMenu()}
 function pzTop(){const n=Object.keys(pzOwned()).length;return `<div class="top"><button data-fb="close">‹ MENU</button><div class="tbs"><button data-fb="v:prof" aria-pressed="${PZ.view==="prof"}">PERFIL</button><button data-fb="v:shop" aria-pressed="${PZ.view==="shop"}">PACKS</button><button data-fb="v:coll" aria-pressed="${PZ.view==="coll"}">COLEÇÃO ${n}/${players.length}</button></div><div class="tkp">${pzTkSvg}<b>${(PZ.data&&PZ.data.tickets)|0}</b></div></div>`}
 const pzPack=cls=>`<div class="pzpk ${cls||""}"><div class="bd"><div class="em">C3D</div><div class="lb">PACK</div></div><div class="strip"></div></div>`;
 function pzRender(){const el=$("pz");if(!PZ.data){el.innerHTML="";return}
- if(PZ.view==="shop"){const t=PZ.data.tickets|0;
-  el.innerHTML=pzTop()+`<div class="shop"><h2>PACK DE JOGADORES</h2>${pzPack("idle")}<p>1 ticket = 1 carta. Quanto maior o OVR, mais rara é a carta.</p><div class="odds">${pzOdds().map(o=>`<span style="--rc:${o.r.c}">${o.r.n} ${o.t<1?o.t.toFixed(1):Math.round(o.t)}%</span>`).join("")}</div><button class="open" data-fb="open" ${t<1?"disabled":""}>${pzTkSvg}${t<1?"SEM TICKETS":"ABRIR PACK · 1"}</button><p>Tens ${t} ticket${t===1?"":"s"}</p></div>`}
+ if(PZ.view==="country"){el.innerHTML=pzCountry();return}
+ if(PZ.view==="sum"){el.innerHTML=pzTop()+pzSummary();return}
+ if(PZ.view==="shop"){const t=PZ.data.tickets|0,top=[...pzPool].sort((a,b)=>b.ovr-a.ovr).slice(0,4),LK=["Pack Ouro Raro","Pack Lendário","Pack Seleções","Pack Lenda"];
+  el.innerHTML=pzTop()+`<div class="dr"><aside><h4>PACKS</h4><div class="pi on">${pzPack("mini")}<div><b>Pack Clásico</b><small>1 ticket = 1 jogador</small></div></div>${LK.map(n=>`<div class="pi lk"><div class="mn"></div><div><b>${n}</b><small>EM BREVE</small></div></div>`).join("")}</aside>
+  <section><h2>PACK CLÁSICO</h2><p class="sb">Jogadores do FC Barcelona e do Real Madrid</p><div class="feat">${top.map(p=>`<div class="fi">${pzCard(p)}</div>`).join("")}</div><div class="odds">${pzOdds().map(o=>`<span style="--rc:${o.r.c}">${o.r.n} ${o.t<1?o.t.toFixed(1):Math.round(o.t)}%</span>`).join("")}</div><p class="sb">Quanto maior o OVR, menor a probabilidade.</p></section>
+  <footer><div class="bal">${pzTkSvg}<b>${t}</b></div><button class="open" data-fb="open:1" ${t<1?"disabled":""}>1 PACK<em>${pzTkSvg}1</em></button><button class="open ten" data-fb="open:10" ${t<10?"disabled":""}>10 PACKS<em>${pzTkSvg}10</em></button></footer></div>`}
  else if(PZ.view==="prof"){const d=PZ.data,L=pzLvl(d.xp||0),s=pzSt(),n=s.w+s.d+s.l,pc=n?Math.round(s.w/n*100):0;
   el.innerHTML=pzTop()+`<div class="prof"><div class="ph0"><div class="lvb">${L.l}</div><div><h2>${pzEsc(d.name||"")}</h2><div class="xb2"><i style="width:${Math.min(100,L.x/L.n*100)}%"></i></div><small>Nível ${L.l} · XP ${L.x}/${L.n} · ${d.xp|0} XP total</small></div></div>
   <h4>RESULTADOS</h4><div class="rec"><div><b>${n}</b>JOGOS</div><div class="w"><b>${s.w}</b>VITÓRIAS</div><div class="d"><b>${s.d}</b>EMPATES</div><div class="l"><b>${s.l}</b>DERROTAS</div><div><b>${pc}%</b>VITÓRIAS</div></div>
@@ -2727,17 +2844,35 @@ function pzRender(){const el=$("pz");if(!PZ.data){el.innerHTML="";return}
   const cnt=PZR.map(r=>{const tot=players.filter(p=>pzRar(p.ovr)===r),h=tot.filter(p=>own[pzId(p)]).length;return `<span style="color:${r.c}">${r.n} ${h}/${tot.length}</span>`}).join(" · ");
   el.innerHTML=pzTop()+`<div class="coll"><div class="ch"><h2>COLEÇÃO</h2><span class="cnt">${Object.keys(own).length}/${players.length}</span><small style="font-size:15px;font-weight:700;letter-spacing:.05em">${cnt}</small><div class="fl">${[["all","Todas"],["own","Tenho"],["miss","Faltam"]].map(([k,l])=>`<button data-fb="f:${k}" aria-pressed="${PZ.flt===k}">${l}</button>`).join("")}</div></div><div class="grid">${list.map(p=>{const n=own[pzId(p)]|0;return `<div class="cell ${n?"own":""}" ${n?`data-fb="sh:${pzId(p)}"`:""}>${pzCard(p,n?"":" lock")}${n>1?`<span class="x">×${n}</span>`:""}</div>`}).join("")}</div></div>`}}
 function pzSparks(side){let h="";for(let i=0;i<22;i++){const x=(Math.random()-.5)*60;h+=`<s style="--w:${(1+Math.random()*2.5).toFixed(1)}px;--h:${(12+Math.random()*26).toFixed(0)}px;--x:${x.toFixed(0)}px;--d:${(1.1+Math.random()*1).toFixed(2)}s;--t:${(Math.random()*2).toFixed(2)}s;margin-left:${(Math.random()*30-15).toFixed(0)}px"></s>`}return `<div class="fx ${side}">${h}</div>`}
-function pzReveal(r){const p=r.p,R=r.r,sp=R.k==="E"||R.k==="L",tag=r.isNew?`<span class="tag">NOVA CARTA</span>`:`<span class="tag rep">REPETIDA ×${r.copies}</span>`;PZ.view="reveal";
- if(!sp)$("pz").innerHTML=`<div class="rv n" style="--rc:${R.c}"><h2>Pack de Jogadores</h2>${r.up?`<div class="up">NÍVEL ${r.level}!</div>`:""}<div class="row"><div class="xpt"><div class="coin">XP</div><small>Experiência</small><b>+${r.g} XP</b></div><div class="cw">${pzCard(p)}${tag}</div></div><button class="cont" data-fb="cont">CONTINUAR</button></div>`;
- else $("pz").innerHTML=`<div class="rv s" style="--rc:${R.c}" data-fb="cont"><div class="spot"></div><div class="rt">${R.n}</div>${pzSparks("l")}${pzSparks("r")}<div class="ban l"><b>${p.ovr}</b><div class="fl">${flag(p.country)}</div><div class="cr"><img src="${CR[p.team]}" alt=""></div></div><div class="ban r"><b>${p.ovr}</b><div class="fl">${flag(p.country)}</div><div class="cr"><img src="${CR[p.team]}" alt=""></div></div><div class="cw">${pzCard(p)}</div><div class="info">${r.isNew?"NOVA CARTA":"REPETIDA ×"+r.copies}<em>·</em>+${r.g} XP${r.up?`<em>·</em>NÍVEL ${r.level}!`:""}</div><div class="stairs"><i></i><i></i><i></i><i></i></div><div class="tap">TOCA PARA CONTINUAR</div></div>`;
- try{sfx(sp?"goal":"ui")}catch(_){}}
-async function pzOpenPack(){if(PZ.busy||!PZ.data||!(PZ.data.tickets>=1)||!window.FB)return;PZ.busy=true;PZ.view="anim";
- const el=$("pz");el.innerHTML=`<div class="anim">${pzPack("shake")}<div class="pzbeam"></div></div><div class="pzflash"></div>`;
- const t0=performance.now(),pr=window.FB.openPack(pzCalc);
- setTimeout(()=>{const b=el.querySelector(".pzbeam");if(b)b.classList.add("on")},1300);
- setTimeout(()=>{const f=el.querySelector(".pzflash");if(f)f.classList.add("on")},2000);
- try{const r=await pr,w=2900-(performance.now()-t0);if(w>0)await new Promise(s=>setTimeout(s,w));PZ.res=r;PZ.busy=false;pzReveal(r)}
- catch(e){PZ.busy=false;PZ.view="shop";pzRender();pzToast(e&&e.message==="no-tickets"?"Sem tickets":/permission/.test((e&&e.code)||"")?"Sem permissão (regras)":"Erro ao abrir pack")}}
+function pzReveal(r,k,n){const p=r.p,R=r.r,sp=R.k==="E"||R.k==="L",tag=r.isNew?`<span class="tag">NOVA CARTA</span>`:`<span class="tag rep">REPETIDA ×${r.copies}</span>`,sk=n>1?`<button class="skip" data-fb="skip">SALTAR TUDO</button><div class="cnt2">${k}/${n}</div>`:"";PZ.view="reveal";
+ if(!sp)$("pz").innerHTML=`<div class="rv n" style="--rc:${R.c}"><h2>Pack de Jogadores</h2><div class="row"><div class="xpt"><div class="coin">${pzTkSvg}</div><small>Tickets</small><b>${r.tl}</b></div><div class="cw">${pzCard(p)}${tag}</div></div><button class="cont" data-fb="cont">CONTINUAR</button>${sk}</div>`;
+ else $("pz").innerHTML=`<div class="rv s" style="--rc:${R.c}" data-fb="cont"><div class="spot"></div><div class="rt">${R.n}</div>${pzSparks("l")}${pzSparks("r")}<div class="ban l"><b>${p.ovr}</b><div class="fl">${flag(p.country)}</div><div class="cr"><img src="${CR[p.team]}" alt=""></div></div><div class="ban r"><b>${p.ovr}</b><div class="fl">${flag(p.country)}</div><div class="cr"><img src="${CR[p.team]}" alt=""></div></div><div class="cw">${pzCard(p)}</div><div class="info">${r.isNew?"NOVA CARTA":"REPETIDA ×"+r.copies}</div><div class="stairs"><i></i><i></i><i></i><i></i></div><div class="tap">TOCA PARA CONTINUAR</div>${sk}</div>`;
+ try{sfx(sp?"goal":"ui")}catch(_){}
+ return new Promise(ok=>{PZ.cont=ok})}
+function pzSummary(){const L=PZ.sum||[];return `<div class="sum"><h2>RESULTADO · ${L.length} PACKS</h2><div class="grid">${L.map(r=>`<div class="cell own">${pzCard(r.p)}<span class="nw ${r.isNew?"":"rp"}">${r.isNew?"NOVA":"×"+r.copies}</span></div>`).join("")}</div><button class="cont" data-fb="v:shop">CONTINUAR</button></div>`}
+const pzWait=ms=>new Promise(s=>setTimeout(s,ms));
+async function pzOpenPack(n){n=n||1;if(PZ.busy||!PZ.data||!(PZ.data.tickets>=n)||!window.FB)return;PZ.busy=true;PZ.skip=false;PZ.sum=[];
+ const el=$("pz");
+ try{for(let k=1;k<=n;k++){
+   if(!PZ.skip){PZ.view="anim";const fast=k>1;el.innerHTML=`<div class="anim">${pzPack("shake")}<div class="pzbeam"></div></div><div class="pzflash"></div>`;
+    const t0=performance.now(),pr=window.FB.openPack(pzCalc);
+    setTimeout(()=>{const b=el.querySelector(".pzbeam");if(b)b.classList.add("on")},fast?500:1300);
+    setTimeout(()=>{const f=el.querySelector(".pzflash");if(f)f.classList.add("on")},fast?900:2000);
+    const r=await pr,w=(fast?1500:2900)-(performance.now()-t0);if(w>0)await pzWait(w);PZ.sum.push(r);
+    PZ.view="anim";await pzReveal(r,k,n)}
+   else{PZ.sum.push(await window.FB.openPack(pzCalc))}}
+  PZ.busy=false;if(n>1){PZ.view="sum";pzRender()}else{PZ.view="shop";pzRender()}}
+ catch(e){PZ.busy=false;PZ.view=PZ.sum&&PZ.sum.length>1?"sum":"shop";pzRender();pzToast(e&&e.message==="no-tickets"?"Sem tickets":/permission/.test((e&&e.code)||"")?"Sem permissão (regras)":"Erro ao abrir pack")}}
+
+// ---- escolher país (1.ª vez) ----
+const PZC=[["PT","Portugal",4,1],["ES","Espanha",5,0],["FR","França",5,0],["BR","Brasil",5,0],["AR","Argentina",5,0],["DE","Alemanha",4,0],["EN","Inglaterra",5,0]];
+function pzCountry(){const st=n=>"★".repeat(n)+"☆".repeat(5-n),cs=PZ.cSel||"PT";
+ return `<div class="cs"><div class="cst">SELECIONAR PAÍS</div><div class="csb"><div class="cin"><h3>${flag("PT")} Portugal</h3><p>${PZ.cInfo?"Recebes a convocatória atual da seleção: 27 jogadores reais, com OVR até 78 e sem PlayStyles. Joga, ganha XP, sobe de nível e ganha tickets para abrir packs e melhorar a equipa com cartas do Barcelona e do Real Madrid.":"A equipa começa só com os jogadores desta seleção. Depois usas as cartas que tiveres, as da seleção e as dos packs."}</p><div class="cch">${["Ataque","Meio-campo","Defesa"].map((l,i)=>`<span>${l}<i style="width:${[70,76,72][i]}%"></i></span>`).join("")}</div></div></div>
+ <div class="ctr">${PZC.map(([c,n,s,on])=>`<div class="ct ${on?"on":"lk"} ${cs===c&&on?"sel":""}" ${on?`data-fb="cs:${c}"`:""}><div class="fl">${flag(c)}</div><b>${n}</b><u>${st(s)}</u>${on?"":"<em>EM BREVE</em>"}</div>`).join("")}</div>
+ <div class="cbt"><button data-fb="cint">INTRODUÇÃO</button><button data-fb="call">TODOS OS PAÍSES</button><button class="ok" data-fb="cok" ${PZ.busy?"disabled":""}>SELECIONAR</button></div></div>`}
+async function pzPickCountry(){if(PZ.busy||!window.FB||!window.FB.setCountry)return;PZ.busy=true;pzRender();
+ try{await window.FB.setCountry(d=>{const c={};pzStarter.forEach(id=>c[id]=Math.max(1,(d.cards||{})[id]|0));return{country:"PT",cards:c}});PZ.busy=false}
+ catch(e){PZ.busy=false;pzRender();pzToast(/permission/.test((e&&e.code)||"")?"Sem permissão (regras)":"Erro ao guardar o país",1)}}
 
 document.addEventListener("click",e=>{const t=e.target.closest("[data-fb]");if(!t)return;const [a,x]=t.dataset.fb.split(":");
  if(a==="prof")pzOpen("prof");else if(a==="packs")pzOpen("shop");else if(a==="coll"){PZ.flt="all";pzOpen("coll")}
@@ -2746,12 +2881,17 @@ document.addEventListener("click",e=>{const t=e.target.closest("[data-fb]");if(!
  else if(a==="close")pzClose();
  else if(a==="v"){PZ.view=x;pzRender()}
  else if(a==="f"){PZ.flt=x;pzRender()}
- else if(a==="open")pzOpenPack();
- else if(a==="cont"){PZ.view="shop";PZ.res=null;pzRender()}
+ else if(a==="open")pzOpenPack(+x||1);
+ else if(a==="skip")PZ.skip=true,PZ.cont&&PZ.cont();
+ else if(a==="cs"){PZ.cSel=x;pzRender()}
+ else if(a==="cint"){PZ.cInfo=!PZ.cInfo;pzRender()}
+ else if(a==="call")pzToast("Mais países em breve",1);
+ else if(a==="cok")pzPickCountry();
+ else if(a==="cont"){if(PZ.cont){const c=PZ.cont;PZ.cont=null;c()}else{PZ.view="shop";pzRender()}}
  else if(a==="sh"){const p=pzBy[x];if(p)openSheet(p)}});
 // durante login/packs, o teclado não deve controlar o jogo
 for(const ev of["keydown","keyup"])addEventListener(ev,e=>{const g=!$("auth").hidden,o=!$("pz").hidden;if(!g&&!o)return;
- if(ev==="keydown"&&o&&!g&&e.code==="Escape"&&!($("psheet")&&!$("psheet").hidden)){if(PZ.view==="reveal"){PZ.view="shop";pzRender()}else pzClose()}
+ if(ev==="keydown"&&o&&!g&&e.code==="Escape"&&!($("psheet")&&!$("psheet").hidden)){if(PZ.view==="country"||PZ.view==="anim"){}else if(PZ.view==="reveal"){if(PZ.cont){const c=PZ.cont;PZ.cont=null;c()}}else pzClose()}
  e.stopImmediatePropagation()},true);
 
 })();

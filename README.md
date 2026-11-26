@@ -14,7 +14,7 @@
 5. **GitHub**: novo repositório → carregar todos estes ficheiros → Settings → Pages → Branch `main`, pasta `/ (root)` → Save.
 6. Firebase → Authentication → Settings → **Authorized domains** → adicionar `O-TEU-USER.github.io`.
 7. Abrir `https://O-TEU-USER.github.io/NOME-DO-REPO/`, criar conta (nome de utilizador + palavra-passe).
-8. Dar tickets: Firestore → coleção `users` → documento do jogador → campo `tickets`.
+8. Tickets: só se ganham ao subir de nível (1 por nível); para dares tickets manualmente, Firestore → coleção `users` → documento do jogador → campo `tickets`.
 
 ## Segurança
 - A `apiKey` Web do Firebase não é secreta; a proteção são as regras. Recomendado: Google Cloud → Credenciais → restringir a chave a `https://O-TEU-USER.github.io/*`.

@@ -4,7 +4,7 @@ service cloud.firestore {
 
     function mine(uid) { return request.auth != null && request.auth.uid == uid; }
     function sum3(s) { return s.w + s.d + s.l; }
-    function allowedKeys() { return ['name','email','tickets','xp','level','cards','stats','lastMatch','country']; }
+    function allowedKeys() { return ['name','email','tickets','xp','level','cards','stats','lastMatch','lastPack','country','admin']; }
     function statKeys() { return ['w','d','l']; }
     // XP acumulado necessário para chegar ao nível L (igual ao jogo): 100*(L-1) + 15*(L-1)*(L-2)
     function xpAt(l) { return 100*(l-1) + 15*(l-1)*(l-2); }
@@ -17,6 +17,7 @@ service cloud.firestore {
       allow create: if mine(uid)
         && request.resource.data.keys().hasOnly(allowedKeys())
         && !('country' in request.resource.data)
+        && request.resource.data.admin == false      // ninguém se cria admin: só tu, na consola do Firebase
         && request.resource.data.name is string && request.resource.data.name.size() <= 20
         && request.resource.data.tickets == 0 && request.resource.data.xp == 0
         && request.resource.data.level == 1 && request.resource.data.cards.size() == 0
@@ -35,12 +36,18 @@ service cloud.firestore {
 
         ||
 
-        // ABRIR PACK: gasta exatamente 1 ticket e toca em 1 só carta (packs não dão XP)
-        ( request.resource.data.diff(resource.data).affectedKeys().hasOnly(['tickets','cards'])
-          && request.resource.data.tickets == resource.data.tickets - 1
+        // GRAVAR PACKS (1 escrita por sessão de packs): gasta de 1 a 100 tickets, no máx. 1 gravação a cada 5 s.
+        // O jogo abre os packs localmente e só grava quando sais do menu de packs.
+        ( request.resource.data.diff(resource.data).affectedKeys().hasOnly(['tickets','cards','lastPack'])
+          && request.resource.data.lastPack == request.time
+          && request.time > resource.data.get('lastPack', timestamp.value(0)) + duration.value(5, 's')
+          && resource.data.tickets - request.resource.data.tickets >= 1
+          && resource.data.tickets - request.resource.data.tickets <= 100
           && request.resource.data.tickets >= 0
-          && request.resource.data.cards.diff(resource.data.cards).affectedKeys().size() == 1
-          && request.resource.data.cards.diff(resource.data.cards).removedKeys().size() == 0 )
+          && request.resource.data.cards.diff(resource.data.cards).removedKeys().size() == 0
+          && request.resource.data.cards.diff(resource.data.cards).affectedKeys().size() >= 1
+          && request.resource.data.cards.diff(resource.data.cards).affectedKeys().size()
+             <= resource.data.tickets - request.resource.data.tickets )
 
         ||
 

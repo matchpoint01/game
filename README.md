@@ -20,3 +20,10 @@
 - A `apiKey` Web do Firebase não é secreta; a proteção são as regras. Recomendado: Google Cloud → Credenciais → restringir a chave a `https://O-TEU-USER.github.io/*`.
 - Nunca ponhas no repositório chaves de conta de serviço (`private_key`).
 - O `firebase-config.js` já traz as chaves do projeto matchpoint01-db.
+
+## Admin e comandos
+Cada conta nova é criada com `admin: false` (aparece "Admin: OFF" no perfil). Só tu podes ligar: Firebase → Firestore → `users` → documento do jogador → adiciona/edita o campo `admin` (boolean) = `true`. Só com admin ligado funcionam os comandos (`/pen`, `/bar 40`, `/verrival`). As regras impedem que um jogador altere o próprio `admin`.
+Contas antigas sem o campo ficam como OFF; para te ligares a ti, cria o campo `admin = true` à mão.
+
+## Limites de escrita
+Os packs são abertos no browser e gravados de uma só vez ao sair do menu de packs (1 escrita, sem leituras). As regras permitem no máximo 1 gravação de packs a cada 5 s e 1 resultado de jogo a cada 90 s.
